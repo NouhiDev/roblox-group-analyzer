@@ -93,11 +93,9 @@ function submitForm() {
             statisticsContainer.appendChild(statisticsElement);
             document.body.appendChild(statisticsContainer);
 
-            // Create a new div for individual game statistics
             const individualStatisticsContainer = document.createElement("div");
             individualStatisticsContainer.id = "individual-statistics-container";
 
-            // Append the individual game statistics to the new container
             data.data.forEach(item => {
                 const individualStatisticsElement = document.createElement("div");
                 const estimatedRevenue = item.visits * 0.18;
@@ -112,7 +110,6 @@ function submitForm() {
                 individualStatisticsContainer.appendChild(individualStatisticsElement);
             });
 
-            // Append the new container to the HTML document
             document.body.appendChild(individualStatisticsContainer);
         })
         .catch(error => {
