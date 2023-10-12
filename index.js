@@ -26,7 +26,7 @@ function submitForm() {
     fetch(apiUrl)
         .then(response => {
             if (!response.ok) {
-                alert(`Network response was not ok: ${response.status}`);
+                alert(`Network response was not ok. Did you input a valid group id?`);
             }
             return response.json();
         })
@@ -41,7 +41,7 @@ function submitForm() {
         })
         .then(response => {
             if (!response.ok) {
-                alert(`Network response was not ok: ${response.status}`);
+                alert(`Network response was not ok. Did you input a valid group id?`);
             }
             return response.json();
         })
