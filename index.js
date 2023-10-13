@@ -87,7 +87,7 @@ function submitForm() {
                 <p>Playing: ${combinedStatistics.playing.toLocaleString()}</p>
                 <p>Favorited Count: ${combinedStatistics.favoritedCount.toLocaleString()}</p>
                 <p>Estimated Revenue: R$ ${combinedStatistics.estimatedRevenue.toLocaleString()} | € ${((combinedStatistics.estimatedRevenue*0.003).toFixed(2))}</p>
-                <p>Estimated Daily Average Revenue: R$ ${estimatedDailyAverage.toFixed(2)}  | € ${((estimatedDailyAverage*0.003).toFixed(2))}</p>
+                <p>Estimated Daily Average Revenue: R$ ${estimatedDailyAverage.toFixed(2)}  | € ${((estimatedDailyAverage*0.0033333).toFixed(2))}</p>
             `;
 
             statisticsContainer.appendChild(statisticsElement);
@@ -104,7 +104,7 @@ function submitForm() {
                     <p>Visits: ${item.visits.toLocaleString()}</p>
                     <p>Playing: ${item.playing.toLocaleString()}</p>
                     <p>Favorited Count: ${item.favoritedCount.toLocaleString()}</p>
-                    <p>Estimated Revenue: R$ ${estimatedRevenue.toLocaleString()} | € ${((estimatedRevenue*0.003).toFixed(2)).toLocaleString()}</p>
+                    <p>Estimated Revenue: R$ ${estimatedRevenue.toLocaleString()} | € ${((estimatedRevenue*0.0033333).toFixed(2)).toLocaleString()}</p>
                 `;
 
                 individualStatisticsContainer.appendChild(individualStatisticsElement);
